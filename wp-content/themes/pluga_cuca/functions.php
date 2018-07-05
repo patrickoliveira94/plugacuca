@@ -24,9 +24,6 @@ if ( ! function_exists( 'pluga_cuca_setup' ) ) :
 		 */
 		load_theme_textdomain( 'pluga_cuca', get_template_directory() . '/languages' );
 
-		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
-
 		/*
 		 * Let WordPress manage the document title.
 		 * By adding theme support, we declare that this theme does not use a
@@ -122,9 +119,11 @@ add_action( 'widgets_init', 'pluga_cuca_widgets_init' );
 function pluga_cuca_scripts() {
 	wp_enqueue_style( 'bootstrap', get_stylesheet_directory_uri() . '/css/bootstrap.min.css', array(), '4.1.1' );
 
-	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-3.3.1.slim.min.js', array(), '3.3.1', true );
+	//wp_enqueue_script( 'jquery3', get_template_directory_uri() . '/js/jquery-3.3.1.slim.min.js', array(), '3.3.1', true );
 
-	wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.min.js', array(), false, true );
+    wp_enqueue_script( 'popper', get_template_directory_uri() . '/js/popper.min.js', array(), false, true );
+
+    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), '', true);
 }
 add_action( 'wp_enqueue_scripts', 'pluga_cuca_scripts' );
 
