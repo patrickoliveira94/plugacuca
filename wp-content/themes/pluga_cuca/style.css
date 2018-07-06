@@ -15,3 +15,81 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 Pluga Cuca is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/* ==== FONTS ==== */
+@font-face {
+    font-family: quicksand;
+    src: url('/wp-content/themes/pluga_cuca/fonts/Quicksand-Regular.ttf');
+}
+
+@font-face {
+    font-family: quicksand-bold;
+    src: url('/wp-content/themes/pluga_cuca/fonts/Quicksand-Bold.ttf');
+}
+
+body {
+    font-family:quicksand, sans-serif;
+}
+
+
+.navbar {
+    background-color: #F0F0F0;
+    border-style: solid;
+    border-color: #5DB69F;
+    border-width: 0px 0px 5px;
+}
+
+.navbar .nav-link {
+    font-family:quicksand-bold, sans-serif;
+    font-size: 14px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #757197;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,.navbar-light .navbar-nav .nav-link:hover {
+    color: #5DB69F;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .nav-link.show,.navbar-light .navbar-nav .show>.nav-link {
+    color: #5DB69F;
+}
+
+
+
+/* ==== MEDIA QUERIES ==== */
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.1rem;
+        padding-left: 1.1rem;
+        padding-top: 1rem;
+    }
+
+}
+
+/* Fix the top margin when logged in */
+/*@media screen and (max-width: 782px) {*/
+    /*.logged-in .nav-bar-fixed-top {*/
+        /*top: 46px;*/
+    /*}*/
+/*}*/
+
+@media (min-width : 768px) {
+
+}
+
+/* Fix the top margin when logged in */
+/*@media screen and (max-width: 600px) {*/
+    /*.logged-in .nav-bar-fixed-top {*/
+        /*top: 42px;*/
+    /*}*/
+/*}*/
+
+@media (min-width : 576px) {
+    /*.navbar {*/
+        /*height: 75px;*/
+    /*}*/
+}
