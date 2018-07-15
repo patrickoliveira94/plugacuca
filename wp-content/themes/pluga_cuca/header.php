@@ -15,6 +15,7 @@
     <head>
         <meta charset="<?php bloginfo( 'charset' ); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" type="image/png" href="/wp-content/themes/pluga_cuca/images/favicon.ico">
 
         <?php wp_head(); ?>
     </head>
@@ -50,14 +51,8 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
 
-            </div>
-        </div>
-    </div>
-    <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'pluga_cuca' ); ?></a>
+<!--    <a class="skip-link screen-reader-text" href="#content">--><?php //esc_html_e( 'Skip to content', 'pluga_cuca' ); ?><!--</a>-->
 
 
 <?php
