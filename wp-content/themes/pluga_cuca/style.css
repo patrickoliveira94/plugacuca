@@ -115,6 +115,10 @@ body {
 
 /* ==== JUMBOTRON ==== */
 
+.jumbotron {
+    margin-bottom: 0;
+}
+
 .jumbotron-custom {
     height: 373px;
     color: #FFF;
@@ -187,4 +191,20 @@ body {
 
 @media (min-width : 576px) {
 
+}
+
+/* ==== SAIBA MAIS ==== */
+
+.saiba-mais {
+    height: 250px;
+    background-color: #757197;
+    text-align: center;
+    margin-bottom: 2px solid #cde0d7;
+}
+
+.saiba-mais__titulo {
+    font-family:quicksand-bold, sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+    padding-top: 50px;
 }

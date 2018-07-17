@@ -8,9 +8,11 @@ get_header();
                 <p class="lead jumbotron-lead">Pluga Cuca é um método de ensino que facilita a aprendizagem e utiliza a Internet como ferramenta.</p>
                 <button type="button" class="btn btn-success">CADASTRE-SE</button>
             </div>
-
         </div>
         <div class="layer"></div>
+    </div>
+    <div class="saiba-mais">
+        <p class="saiba-mais__titulo">Saiba mais sobre os quatro pilares da educação ></p>
     </div>
 
 <?php
