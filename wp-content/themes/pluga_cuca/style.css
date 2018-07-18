@@ -28,6 +28,34 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
     src: url('/wp-content/themes/pluga_cuca/fonts/Quicksand-Bold.ttf');
 }
 
+/* ==== MEDIA QUERIES ==== */
+
+/* col-lg */
+@media (max-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.1rem;
+        padding-left: 1.1rem;
+        padding-top: 1rem;
+    }
+
+}
+
+/* col-md */
+@media (max-width : 768px) {
+    .aprenda-ja__categorias li {
+        width: 100%;
+    }
+}
+
+/* col-sm */
+@media (max-width : 576px) {
+    .aprenda-ja__categorias li {
+        width: 100%;
+    }
+}
+
+
+/* ==== BOOTSTRAP ==== */
 body {
     font-family:quicksand, sans-serif;
 }
@@ -35,8 +63,6 @@ body {
 .centralized-text {
     text-align: center;
 }
-
-/* ==== BOOTSTRAP ==== */
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
@@ -86,16 +112,11 @@ body {
     box-shadow: 0 0 0 .2rem rgba(40,167,69,.5);
 }
 
-/* ==== CUSTOM DISPLAY ==== */
-
 .display-5 {
     font-size: 2.31rem;
     font-weight: 700;
     line-height: 1.2;
 }
-
-
-/* ==== NAVBAR ==== */
 
 .navbar {
     background-color: #F0F0F0;
@@ -121,6 +142,37 @@ body {
     color: #5DB69F;
 }
 
+/* ==== GERAL ==== */
+
+.geral__bloco {
+    height: 100%;
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.geral__titulo {
+    font-family:quicksand-bold, sans-serif;
+    color: #5DB69F;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.geral__subtitulo {
+    font-family:quicksand-bold, sans-serif;
+    color: #787878;
+    font-size: 1.0rem;
+}
+
+.geral__btn {
+    background-color: #313466;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.geral__btn:hover {
+    background-color: #313466ee;
+}
+
 /* === FOOTER === */
 footer {
     background-color: #313466;
@@ -130,6 +182,7 @@ footer {
     font-weight: bold;
     font-size: .9rem;
     padding: 40px 0px;
+    border-bottom: 5px solid #5DB69F;
 }
 
 .footer__linha {
@@ -161,23 +214,21 @@ footer {
 
 .jumbotron {
     margin-bottom: 0;
-}
-
-.jumbotron-custom {
     height: 100%;
     color: #FFF;
     background: transparent url('/wp-content/themes/pluga_cuca/images/jumbotron/bg-photo.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
-    padding: 80px 0;
+    padding: 80px 0;    
 }
 
-.jumbotron-custom .lead {
+.jumbotron__lead {
     font-size: 1.13rem;
     font-weight: 300;
+    margin: 30px 0 37px 0;
 }
 
-.jumbotron-custom .layer {
+.jumbotron__layer {
     background-color: #313466;
     opacity: 0.6;
     width: 100%;
@@ -188,56 +239,18 @@ footer {
     z-index: 9;
 }
 
-.jumbotron-custom .container {
+.jumbotron__container {
     z-index: 10;
     position: relative;
 }
 
-.jumbotron-custom .wrap-jumbotrom-content {
+.jumbotron__wrap-jumbotrom-content {
     max-width: 548px;
     margin: 0 auto;
 }
 
-.jumbotron-custom .jumbotron-lead {
-    margin: 30px 0 37px 0;
-}
-
-
-
-/* ==== MEDIA QUERIES ==== */
-
-/* col-lg */
-@media (min-width: 992px) {
-    .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1.1rem;
-        padding-left: 1.1rem;
-        padding-top: 1rem;
-    }
-
-}
-
-/* Fix the top margin when logged in */
-/*@media screen and (max-width: 782px) {*/
-    /*.logged-in .nav-bar-fixed-top {*/
-        /*top: 46px;*/
-    /*}*/
-/*}*/
-
-/* col-md */
-@media (min-width : 768px) {
-
-}
-
-/* Fix the top margin when logged in */
-/*@media screen and (max-width: 600px) {*/
-    /*.logged-in .nav-bar-fixed-top {*/
-        /*top: 42px;*/
-    /*}*/
-/*}*/
-
-/* col-sm */
-@media (min-width : 576px) {
-
+.jumbotron__arrow {
+    margin-top: 30px;
 }
 
 /* ==== SAIBA MAIS ==== */
@@ -267,24 +280,6 @@ footer {
 } 
 
 /* ==== APRENDA JÁ ==== */
-
-.aprenda-ja {
-    text-align: center;
-    padding: 50px 0px;
-}
-
-.aprenda-ja__titulo {
-    font-family:quicksand-bold, sans-serif;
-    color: #5DB69F;
-    font-size: 1.5rem;
-}
-
-.aprenda-ja__subtitulo {
-    font-family:quicksand-bold, sans-serif;
-    color: #787878;
-    font-size: 1.0rem;
-    padding-top: 10px;
-}
 
 .aprenda-ja__curso {
     text-align: left;
@@ -326,12 +321,20 @@ footer {
     color: #7F7F7F;
 }
 
-.aprenda-ja__btn {
-    background-color: #313466;
-    color: #fff;
-    margin-top: 40px;
+/* ==== ENVOLVIDOS ==== */
+
+.envolvidos {
+    background-color: #F0F0F0;
+    border-bottom: 7px solid #cde0d7;
 }
 
-.aprenda-ja__btn:hover {
-    background-color: #313466ee;
+.envolvidos__thumb {
+    border-radius: 50%;
+}
+
+.envolvidos__subtitulo {
+    color: #757197;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
 }

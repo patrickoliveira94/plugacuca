@@ -1,15 +1,18 @@
 <?php
 get_header();
 ?>
-    <div class="jumbotron jumbotron-fluid jumbotron-custom">
-        <div class="container centralized-text">
-            <div class="wrap-jumbotrom-content">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="jumbotron__container centralized-text">
+            <div class="jumbotron__wrap-jumbotrom-content">
                 <h1 class="display-5">Conheça o Pluga Cuca</h1>
-                <p class="lead jumbotron-lead">Pluga Cuca é um método de ensino que facilita a aprendizagem e utiliza a Internet como ferramenta.</p>
+                <p class="jumbotron__lead">Pluga Cuca é um método de ensino que facilita a aprendizagem e utiliza a Internet como ferramenta.</p>
                 <button type="button" class="btn btn-success">CADASTRE-SE</button>
+                <div class="centralized-text">
+                    <img class="jumbotron__arrow" src="<?= get_template_directory_uri() . '/images/arrow_down.svg'; ?>" width="30" height="30">
+                </div>                
             </div>
         </div>
-        <div class="layer"></div>
+        <div class="jumbotron__layer"></div>
     </div>
 
     <div class="saiba-mais">
@@ -32,9 +35,9 @@ get_header();
         </div>
     </div>
 
-    <div class="aprenda-ja">
-        <p class="aprenda-ja__titulo">Aprenda Já!</p>
-        <p class="aprenda-ja__subtitulo">Aqui o espaço é seu.</p>
+    <div class="geral__bloco aprenda-ja">
+        <p class="geral__titulo">Aprenda Já!</p>
+        <p class="geral__subtitulo">Aqui o espaço é seu.</p>
 
         <ul class="nav nav-pills mb-3 justify-content-center aprenda-ja__categorias" id="pills-tab" role="tablist">
             <li class="nav-item">
@@ -113,8 +116,41 @@ get_header();
         </div>    
         
         <div class="justify-content-center">
-            <button type="button" class="btn aprenda-ja__btn">VEJA NOSSAS AULAS ></button>
+            <button type="button" class="btn geral__btn">VEJA NOSSAS AULAS ></button>
         </div>
+    </div>
+
+    <div class="geral__bloco envolvidos">
+        <p class="geral__titulo">Pais, aprendizes e educadores</p>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-4">
+                    <img class="envolvidos__thumb" src="<?= get_template_directory_uri() . '/images/pais.jpg'; ?>" width="215" height="215" alt="Pais">
+                    <p class="envolvidos__subtitulo">
+                        Pais >
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <img class="envolvidos__thumb" src="<?= get_template_directory_uri() . '/images/aprendizes.jpg'; ?>" width="215" height="215" alt="Aprendizes">
+                    <p class="envolvidos__subtitulo">
+                        Aprendizes >
+                    </p>                    
+                </div>
+                <div class="col-sm-12 col-md-4">
+                    <img class="envolvidos__thumb" src="<?= get_template_directory_uri() . '/images/educadores.jpg'; ?>" width="215" height="215" alt="Educadores">
+                    <p class="envolvidos__subtitulo">
+                        Educadores >
+                    </p>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="geral__bloco">
+        <p class="geral__titulo">Quem somos?</p>
+        <p class="geral__subtitulo">Somos educadores com compromisso para a melhoria da qualidade do ensino.</p>
+        <button type="button" class="btn geral__btn">CONHEÇA ></button>
     </div>
 
 <?php
