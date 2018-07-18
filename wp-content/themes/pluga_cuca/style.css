@@ -36,7 +36,16 @@ body {
     text-align: center;
 }
 
-/* ==== BUTTONS ==== */
+/* ==== BOOTSTRAP ==== */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #5DB69F;
+}
+
+.nav-pills .nav-link {
+    border-radius: .1rem;
+}
 
 .btn {
     border-radius: 1.2rem;
@@ -112,6 +121,41 @@ body {
     color: #5DB69F;
 }
 
+/* === FOOTER === */
+footer {
+    background-color: #313466;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: .9rem;
+    padding: 40px 0px;
+}
+
+.footer__linha {
+    height: 2px;
+    background-color: #00000020;
+    margin: 2rem 0;
+}
+
+.footer__subitem {
+    text-align: left;
+    padding-left: 0;
+}
+
+.footer__subitem li {
+    list-style-type: none;
+    font-size: .7rem;
+    line-height: 1.3rem;
+}
+
+.footer__redes-sociais {
+    padding-left: 0;
+}
+
+.footer__copyright {
+    font-size: .75rem;
+}
 
 /* ==== JUMBOTRON ==== */
 
@@ -120,7 +164,7 @@ body {
 }
 
 .jumbotron-custom {
-    height: 373px;
+    height: 100%;
     color: #FFF;
     background: transparent url('/wp-content/themes/pluga_cuca/images/jumbotron/bg-photo.jpg') no-repeat center center;
     background-size: cover;
@@ -162,6 +206,7 @@ body {
 
 /* ==== MEDIA QUERIES ==== */
 
+/* col-lg */
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1.1rem;
@@ -178,6 +223,7 @@ body {
     /*}*/
 /*}*/
 
+/* col-md */
 @media (min-width : 768px) {
 
 }
@@ -189,6 +235,7 @@ body {
     /*}*/
 /*}*/
 
+/* col-sm */
 @media (min-width : 576px) {
 
 }
@@ -196,15 +243,95 @@ body {
 /* ==== SAIBA MAIS ==== */
 
 .saiba-mais {
-    height: 250px;
+    height: 100%;
     background-color: #757197;
     text-align: center;
-    margin-bottom: 2px solid #cde0d7;
+    border-bottom: 7px solid #cde0d7;
+    padding: 50px 0;
 }
 
 .saiba-mais__titulo {
     font-family:quicksand-bold, sans-serif;
     color: #fff;
     font-size: 1.3rem;
-    padding-top: 50px;
+}
+
+.saiba-mais__itens {
+    margin-top: 45px;
+}
+
+.saiba-mais__bag:hover {
+    background-image: url('images/bag_hover.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+} 
+
+/* ==== APRENDA JÁ ==== */
+
+.aprenda-ja {
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.aprenda-ja__titulo {
+    font-family:quicksand-bold, sans-serif;
+    color: #5DB69F;
+    font-size: 1.5rem;
+}
+
+.aprenda-ja__subtitulo {
+    font-family:quicksand-bold, sans-serif;
+    color: #787878;
+    font-size: 1.0rem;
+    padding-top: 10px;
+}
+
+.aprenda-ja__curso {
+    text-align: left;
+    line-height: .3rem;
+}
+
+.aprenda-ja__curso-thumb {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    border: 1px #E6E6E6 solid;
+    margin: auto;
+    background: transparent url('images/book.svg') no-repeat center center;
+    background-size: 50px 38px;   
+    margin-bottom: 20px; 
+}
+
+.aprenda-ja__curso-titulo {
+    color: #757197;
+    line-height: 1rem;
+    font-weight: bold;
+}
+
+.aprenda-ja__categorias a {
+    color: #757197;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.aprenda-ja__curso-categoria {
+    color: #66b79f;
+}
+
+.aprenda-ja__curso-ano {
+    color: #66b79f;
+}
+
+.aprenda-ja__curso-materia {
+    color: #7F7F7F;
+}
+
+.aprenda-ja__btn {
+    background-color: #313466;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.aprenda-ja__btn:hover {
+    background-color: #313466ee;
 }
