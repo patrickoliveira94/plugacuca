@@ -75,6 +75,10 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
         text-align: center !important;
         margin-bottom: 40px;
     }    
+
+    .parceiros__thumbs-item {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -203,6 +207,13 @@ a:hover {
     padding: 50px 0px;
 }
 
+.geral__cabecalho {
+    font-family: quicksand-bold, sans-serif;
+    color: #5DB69F;
+    font-size: 2rem;
+    margin-bottom: 30px;    
+}
+
 .geral__titulo {
     font-family:quicksand-bold, sans-serif;
     color: #5DB69F;
@@ -213,6 +224,12 @@ a:hover {
 .geral__texto {
     color: #787878;
     font-size: 1.0rem;
+}
+
+.geral__destaque {
+    font-weight: 700;
+    text-align: center;
+    color: #787878;
 }
 
 .geral__btn {
@@ -235,6 +252,10 @@ a:hover {
     height: 2px;
     background-color: #00000020;
     margin: 20px 0;
+}
+
+.geral__thumb-redonda {
+    border-radius: 50%;
 }
 
 /* === FOOTER === */
@@ -387,10 +408,6 @@ footer {
     border-bottom: 7px solid #cde0d7;
 }
 
-.envolvidos__thumb {
-    border-radius: 50%;
-}
-
 .envolvidos__subtitulo {
     color: #757197;
     font-size: 1.2rem;
@@ -403,13 +420,6 @@ footer {
 .quem-somos {
     padding-top: 50px;
     padding-bottom: 0;
-}
-
-.quem-somos__titulo {
-    font-family: quicksand-bold, sans-serif;
-    color: #5DB69F;
-    font-size: 2rem;
-    margin-bottom: 30px;    
 }
 
 .quem-somos__titulo-onde-estamos {
@@ -442,12 +452,6 @@ footer {
     padding-bottom: 30px;
 }
 
-.quem-somos__destaque {
-    font-weight: 700;
-    text-align: center;
-    color: #787878;
-}
-
 .quem-somos__mapa{
     overflow:hidden;
     padding-bottom:400px;
@@ -478,4 +482,22 @@ footer {
 .quem-somos__btn {
     width: 170px;
     margin-bottom: 20px;
+}
+
+/* ==== PARCEIROS ==== */
+
+.parceiros__thumbs {
+    margin: 40px 0;
+}
+
+/* ==== QUATRO PILARES ==== */
+
+.quatro-pilares__linha {
+    height: 1px;
+    background-color: #5DB69F;
+    margin: 50px 0;
+}
+
+.quatro-pilares__titulo {
+    font-size: 1.1rem;
 }

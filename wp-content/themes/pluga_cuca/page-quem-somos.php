@@ -1,6 +1,6 @@
 <?php get_header(); ?>
     <section class="geral__bloco quem-somos">
-        <h1 class="quem-somos__titulo">Quem somos</h1>
+        <h1 class="geral__cabecalho">Quem somos</h1>
         <div class="container">
             <ul class="nav nav-pills mb-3 justify-content-center geral__categorias" id="pills-tab" role="tablist">
                 <li class="nav-item">
@@ -130,7 +130,7 @@
                         O Pluga Cuca é uma monitoria online que se apresenta com uma finalidade da maior importância:
                     </p>
 
-                    <p class="quem-somos__destaque">
+                    <p class="geral__destaque">
                         APRENDER PARA ENSINAR E ENSINAR PARA APRENDER.
                     </p>
 

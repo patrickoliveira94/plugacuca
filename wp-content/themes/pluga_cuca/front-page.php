@@ -127,19 +127,19 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-4">
-                    <img class="envolvidos__thumb" src="<?= get_template_directory_uri() . '/images/pais.jpg'; ?>" width="215" height="215" alt="Pais">
+                    <img class="geral__thumb-redonda" src="<?= get_template_directory_uri() . '/images/pais.jpg'; ?>" width="215" height="215" alt="Pais">
                     <p class="envolvidos__subtitulo">
                         Pais >
                     </p>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <img class="envolvidos__thumb" src="<?= get_template_directory_uri() . '/images/aprendizes.jpg'; ?>" width="215" height="215" alt="Aprendizes">
+                    <img class="geral__thumb-redonda" src="<?= get_template_directory_uri() . '/images/aprendizes.jpg'; ?>" width="215" height="215" alt="Aprendizes">
                     <p class="envolvidos__subtitulo">
                         Aprendizes >
                     </p>                    
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <img class="envolvidos__thumb" src="<?= get_template_directory_uri() . '/images/educadores.jpg'; ?>" width="215" height="215" alt="Educadores">
+                    <img class="geral__thumb-redonda" src="<?= get_template_directory_uri() . '/images/educadores.jpg'; ?>" width="215" height="215" alt="Educadores">
                     <p class="envolvidos__subtitulo">
                         Educadores >
                     </p>                    
