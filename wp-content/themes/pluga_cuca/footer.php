@@ -28,12 +28,14 @@
 				</div>									
 			</div>
 
-			<div class="footer__linha"></div>
+			<div class="geral__linha"></div>
+		</div>		
 
+		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-sm-12 col-md-6">
+				<div class="col-md-6 col-12">
 					<div class="row justify-content-center">
-						<div class="col-sm-6 col-md-4">
+						<div class="col-md-4 col-6">
 							<ul class="footer__subitem">
 								<li>Ensino Fundamental</li>
 								<li>Ensino Médio</li>
@@ -42,14 +44,14 @@
 								<li>Educação Financeira</li>
 							</ul>
 						</div>
-						<div class="col-sm-6 col-md-4">
+						<div class="col-md-4 col-6">
 							<ul class="footer__subitem">
 								<li>Pais</li>
 								<li>Aprendizes</li>
 								<li>Educadores</li>
 							</ul>
 						</div>
-						<div class="col-sm-12 col-md-4">
+						<div class="col-md-4 col-12">
 							<ul class="footer__subitem">
 								<li>Quem Somos</li>
 								<li>Pilares da Educação</li>
@@ -60,13 +62,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-12 col-md-6">
+				<div class="col-md-6 col-12">
 					<ul class="footer__subitem">
 						<li>Faça parte. Siga-nos!</li>
 					</ul>
 					<div class="container">
-						<div class="row">
-							<div class="col-1 footer__redes-sociais">
+						<div class="row footer__redes-sociais">
+							<div class="col-1 footer__redes-sociais-item--first">
 								<a href="http://www.facebook.com/plugacuca" target="_blank"><img src="<?= get_template_directory_uri() . '/images/facebook.svg'; ?>" width="30" height="30" alt="Facebook"></a>
 							</div>
 							<div class="col-1">
@@ -77,8 +79,11 @@
 				</div>
 			</div>
 
-			<div class="footer__linha"></div>
+			<div class="geral__linha"></div>
 
+		</div>
+
+		<div class="container">
 			<div class="row justify-content-center">
 				<p class="footer__copyright">© Todos os Direitos Reservados - Pluga Cuca - www.plugacuca.com.br</p>
 			</div>

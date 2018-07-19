@@ -1,6 +1,4 @@
-<?php
-get_header();
-?>
+<?php get_header(); ?>
     <div class="jumbotron jumbotron-fluid">
         <div class="jumbotron__container centralized-text">
             <div class="jumbotron__wrap-jumbotrom-content">
@@ -15,31 +13,31 @@ get_header();
         <div class="jumbotron__layer"></div>
     </div>
 
-    <div class="saiba-mais">
+    <section class="saiba-mais">
         <p class="saiba-mais__titulo">Saiba mais sobre os quatro pilares da educação ></p>
         <div class="container saiba-mais__itens">
-            <div class="row justify-content-md-center">
-                <div class="col-sm-6 col-md-2 col-lg-1">
+            <div class="row justify-content-center">
+                <div class="col-lg-1 col-md-2 col-6 text-center">
                     <img class="saiba-mais__bag" src="<?= get_template_directory_uri() . '/images/bag.svg'; ?>" alt="Aprender a Conhecer">
                 </div>
-                <div class="col-sm-6 col-md-2 col-lg-1">
+                <div class="col-lg-1 col-md-2 col-6 text-center">
                     <img class="saiba-mais__hand" src="<?= get_template_directory_uri() . '/images/hand.svg'; ?>" alt="Aprender a Fazer">
                 </div>
-                <div class="col-sm-6 col-md-2 col-lg-1">
+                <div class="col-lg-1 col-md-2 col-6 text-center">
                     <img class="saiba-mais__people" src="<?= get_template_directory_uri() . '/images/people.svg'; ?>" alt="Aprender a viver com os outros">
                 </div>
-                <div class="col-sm-6 col-md-2 col-lg-1">
+                <div class="col-lg-1 col-md-2 col-6 text-center">
                     <img class="saiba-mais__digital" src="<?= get_template_directory_uri() . '/images/digital.svg'; ?>" alt="Aprender a ser">
                 </div>            
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="geral__bloco aprenda-ja">
+    <section class="aprenda-ja geral__bloco">   
         <p class="geral__titulo">Aprenda Já!</p>
-        <p class="geral__subtitulo">Aqui o espaço é seu.</p>
+        <p class="geral__texto">Aqui o espaço é seu.</p>
 
-        <ul class="nav nav-pills mb-3 justify-content-center aprenda-ja__categorias" id="pills-tab" role="tablist">
+        <ul class="nav nav-pills mb-3 justify-content-center geral__categorias" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">ENSINO FUNDAMENTAL</a>
             </li>
@@ -62,8 +60,11 @@ get_header();
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                 <div class="container">
+
+                    <div class="geral__linha"></div>
+
                     <div class="row justify-content-center">
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="aprenda-ja__curso">
                                 <div class="aprenda-ja__curso-thumb">
 
@@ -74,7 +75,7 @@ get_header();
                                 <p class="aprenda-ja__curso-materia">Português</p>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="aprenda-ja__curso">
                                 <div class="aprenda-ja__curso-thumb">
 
@@ -85,7 +86,7 @@ get_header();
                                 <p class="aprenda-ja__curso-materia">Português</p>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="aprenda-ja__curso">
                                 <div class="aprenda-ja__curso-thumb">
 
@@ -96,7 +97,7 @@ get_header();
                                 <p class="aprenda-ja__curso-materia">Português</p>
                             </div>
                         </div>
-                        <div class="col-sm-6 col-md-3">
+                        <div class="col-md-3 col-6">
                             <div class="aprenda-ja__curso">
                                 <div class="aprenda-ja__curso-thumb">
 
@@ -118,9 +119,9 @@ get_header();
         <div class="justify-content-center">
             <button type="button" class="btn geral__btn">VEJA NOSSAS AULAS ></button>
         </div>
-    </div>
+    </section>
 
-    <div class="geral__bloco envolvidos">
+    <section class="envolvidos geral__bloco">
         <p class="geral__titulo">Pais, aprendizes e educadores</p>
 
         <div class="container">
@@ -145,13 +146,12 @@ get_header();
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <div class="geral__bloco">
         <p class="geral__titulo">Quem somos?</p>
-        <p class="geral__subtitulo">Somos educadores com compromisso para a melhoria da qualidade do ensino.</p>
-        <button type="button" class="btn geral__btn">CONHEÇA ></button>
+        <p class="geral__texto">Somos educadores com compromisso para a melhoria da qualidade do ensino.</p>        
+        <a href="quem-somos" class="btn geral__btn">CONHEÇA ></a>
     </div>
 
-<?php
-get_footer();
+<?php get_footer(); ?>

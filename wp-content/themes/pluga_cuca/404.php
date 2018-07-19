@@ -1,60 +1,20 @@
-<?php
-/**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package Pluga_Cuca
- */
+<?php get_header(); ?>
 
-get_header();
-?>
+	<section class=" geral__bloco erro404">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-12">
+					<p class="geral__titulo">A página que você procura não pode ser encontrada</p>
+					<p class="geral__subtitulo">Possíveis motivos</p>
+					<ul>
+						<li>O conteúdo não está mais no ar</li>
+						<li>A página mudou de endereço</li>
+						<li>O endereço digitado está incorreto</li>
+					</ul>
+					<button type="button" class="btn geral__btn">IR PARA PÁGINA INICIAL ></button>							
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'pluga_cuca' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'pluga_cuca' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'pluga_cuca' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$pluga_cuca_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'pluga_cuca' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$pluga_cuca_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_footer();
+<?php get_footer(); ?>

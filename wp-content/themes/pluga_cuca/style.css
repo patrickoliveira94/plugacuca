@@ -42,22 +42,50 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 /* col-md */
 @media (max-width : 768px) {
-    .aprenda-ja__categorias li {
+    .geral__categorias li {
         width: 100%;
     }
+
+    .aprenda-ja__curso-thumb {
+        width: 160px !important;
+        height: 160px !important;
+    }    
 }
 
 /* col-sm */
 @media (max-width : 576px) {
-    .aprenda-ja__categorias li {
+    .geral__categorias li {
         width: 100%;
     }
+
+    .footer__subitem {
+        text-align: center !important;
+    }
+
+    .footer__redes-sociais {
+        justify-content: center;
+    }
+
+    .aprenda-ja__curso-thumb {
+        width: 160px !important;
+        height: 160px !important;
+    }
+
+    .quem-somos__onde-estamos-item {
+        text-align: center !important;
+        margin-bottom: 40px;
+    }    
 }
 
 
 /* ==== BOOTSTRAP ==== */
 body {
     font-family:quicksand, sans-serif;
+}
+
+a:hover {
+    color: #66b79f;
+    text-decoration: underline;
 }
 
 .centralized-text {
@@ -112,6 +140,31 @@ body {
     box-shadow: 0 0 0 .2rem rgba(40,167,69,.5);
 }
 
+.btn-info {
+    color: #fff;
+    background-color: #313466;
+    border-color: #313466;
+}
+
+.btn-info:hover {
+    background-color: #313466cc;
+    border-color: #313466;
+}
+
+.btn-info.focus, .btn-info:focus {
+    box-shadow: 0 0 0 0.2rem rgb(48, 48, 105);
+}
+
+.btn-info:not(:disabled):not(.disabled).active:focus, .btn-info:not(:disabled):not(.disabled):active:focus, .show>.btn-info.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(48, 48, 105, 0.5);
+}
+
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show>.btn-info.dropdown-toggle {
+    color: #fff;
+    background-color: #313466;
+    border-color: #313466;
+}
+
 .display-5 {
     font-size: 2.31rem;
     font-weight: 700;
@@ -157,8 +210,7 @@ body {
     margin-bottom: 30px;
 }
 
-.geral__subtitulo {
-    font-family:quicksand-bold, sans-serif;
+.geral__texto {
     color: #787878;
     font-size: 1.0rem;
 }
@@ -173,22 +225,27 @@ body {
     background-color: #313466ee;
 }
 
+.geral__categorias a {
+    color: #757197;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.geral__linha {
+    height: 2px;
+    background-color: #00000020;
+    margin: 20px 0;
+}
+
 /* === FOOTER === */
 footer {
     background-color: #313466;
-    height: 100%;
     text-align: center;
     color: #fff;
     font-weight: bold;
     font-size: .9rem;
     padding: 40px 0px;
     border-bottom: 5px solid #5DB69F;
-}
-
-.footer__linha {
-    height: 2px;
-    background-color: #00000020;
-    margin: 2rem 0;
 }
 
 .footer__subitem {
@@ -202,12 +259,19 @@ footer {
     line-height: 1.3rem;
 }
 
-.footer__redes-sociais {
+.footer__redes-sociais-item--first {
     padding-left: 0;
 }
 
 .footer__copyright {
     font-size: .75rem;
+}
+
+/* ==== ERRO 404 ==== */
+
+.erro404 {
+    text-align: left;
+    height: 500px;
 }
 
 /* ==== JUMBOTRON ==== */
@@ -303,14 +367,9 @@ footer {
     font-weight: bold;
 }
 
-.aprenda-ja__categorias a {
-    color: #757197;
-    font-weight: bold;
-    font-size: .9rem;
-}
-
 .aprenda-ja__curso-categoria {
     color: #66b79f;
+    line-height: 1rem;
 }
 
 .aprenda-ja__curso-ano {
@@ -337,4 +396,86 @@ footer {
     font-size: 1.2rem;
     font-weight: bold;
     margin-top: 20px;
+}
+
+/* ==== QUEM SOMOS ==== */
+
+.quem-somos {
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.quem-somos__titulo {
+    font-family: quicksand-bold, sans-serif;
+    color: #5DB69F;
+    font-size: 2rem;
+    margin-bottom: 30px;    
+}
+
+.quem-somos__titulo-onde-estamos {
+    color: #fff;
+}
+
+.quem-somos__linha {
+    background-color: #757197;
+}
+
+.quem-somos__texto {
+    text-align: justify;
+}
+
+.quem-somos__frase {
+    font-family: effra, sans-serif;
+    text-align: justify;
+    font-style: italic;
+    color: #757197;    
+    line-height: 1rem;
+    margin: 50px 0;
+}
+
+.quem-somos__frase-autor {
+    font-size: .9rem;
+}
+
+.quem-somos__bloco {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.quem-somos__destaque {
+    font-weight: 700;
+    text-align: center;
+    color: #787878;
+}
+
+.quem-somos__mapa{
+    overflow:hidden;
+    padding-bottom:400px;
+    position:relative;
+}
+
+.quem-somos__mapa iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.quem-somos__layer {
+    background-color: #313466bb;
+    width: 100%;
+    height: 400px;
+    padding: 100px 0;
+    color: #fff;
+    font-weight: bold;
+}
+
+.quem-somos__onde-estamos-item {
+    text-align: left;
+}
+
+.quem-somos__btn {
+    width: 170px;
+    margin-bottom: 20px;
 }

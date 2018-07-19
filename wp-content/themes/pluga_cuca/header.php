@@ -26,7 +26,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
 
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="<?php echo site_url(); ?>">
                     <img src="<?= get_template_directory_uri() . '/images/logo.svg'; ?>" width="178" height="57" alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,13 +40,12 @@
                             <a class="nav-link" href="#">AULAS <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">QUEM SOMOS</a>
+                            <a class="nav-link" href="<?php echo site_url() . '/quem-somos' ; ?>">QUEM SOMOS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">FALE CONOSCO</a>
                         </li>
                     </ul>
-
 
                     Olá, João da Silva
                 </div>
