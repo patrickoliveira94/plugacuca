@@ -39,26 +39,26 @@
 
         <ul class="nav nav-pills mb-3 justify-content-center geral__categorias" id="pills-tab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">ENSINO FUNDAMENTAL</a>
+                <a class="nav-link active" id="ensino-fundamental" data-toggle="pill" href="#pills-ensino-fundamental" role="tab" aria-controls="pills-home" aria-selected="true">ENSINO FUNDAMENTAL</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">ENSINO MÉDIO</a>
+                <a class="nav-link" id="ensino-medio" data-toggle="pill" href="#pills-ensino-medio" role="tab" aria-controls="pills-profile" aria-selected="false">ENSINO MÉDIO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">TABUADA</a>
+                <a class="nav-link" id="tabuada" data-toggle="pill" href="#pills-tabuada" role="tab" aria-controls="pills-contact" aria-selected="false">TABUADA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">MATERIAL DOURADO</a>
+                <a class="nav-link" id="material-dourado" data-toggle="pill" href="#pills-material-dourado" role="tab" aria-controls="pills-contact" aria-selected="false">MATERIAL DOURADO</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">EDUCAÇÃO FINANCEIRA</a>
+                <a class="nav-link" id="educacao-financeira" data-toggle="pill" href="#pills-educacao-financeira" role="tab" aria-controls="pills-contact" aria-selected="false">EDUCAÇÃO FINANCEIRA</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">HISTORINHAS</a>
+                <a class="nav-link" id="historinhas" data-toggle="pill" href="#pills-historinhas" role="tab" aria-controls="pills-contact" aria-selected="false">HISTORINHAS</a>
             </li>                                    
         </ul>
         <div class="tab-content" id="pills-tabContent">
-            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="tab-pane fade show active" id="pills-ensino-fundamental" role="tabpanel" aria-labelledby="ensino-fundamental">
                 <div class="container">
 
                     <div class="geral__linha"></div>
@@ -112,8 +112,11 @@
                 </div>
             </div>
             
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">2</div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">3</div>
+            <div class="tab-pane fade" id="pills-ensino-medio" role="tabpanel" aria-labelledby="ensino-medio">2</div>
+            <div class="tab-pane fade" id="pills-tabuada" role="tabpanel" aria-labelledby="tabuada">3</div>
+            <div class="tab-pane fade" id="pills-material-dourado" role="tabpanel" aria-labelledby="material-dourado">4</div>
+            <div class="tab-pane fade" id="pills-educacao-financeira" role="tabpanel" aria-labelledby="educacao-financeira">5</div>
+            <div class="tab-pane fade" id="pills-historinhas" role="tabpanel" aria-labelledby="historinhas">6</div>
         </div>    
         
         <div class="justify-content-center">
